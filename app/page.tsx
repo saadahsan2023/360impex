@@ -1,7 +1,16 @@
+import FeaturedProducts from '../components/FeaturedProducts';
+import HeroSection from '../components/HeroSlides';
+import HowItWorks from '../components/HowItWorks';
+import Section from '../components/Section';
+
 export default function Home() {
   return (
-    <main className="p-8">
-      <h1 className="text-3xl font-bold underline">Welcome to 360 Impex</h1>
+    <main>
+
+      <HeroSection />
+      <FeaturedProducts />
+      <Section />
+      <HowItWorks />
     </main>
   );
 }

@@ -1,3 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap");
 
 @import "tailwindcss";
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}

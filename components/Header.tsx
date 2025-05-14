@@ -147,10 +147,7 @@ export default function Header() {
                 </nav>
 
                 {/* Contact Us Button - Right */}
-                <Link
-                    href="/contact-us"
-                    className="bg-[#7ed957] text-white px-4 py-2 rounded-full font-semibold hover:bg-[#6cc44a] transition-transform duration-200 transform hover:scale-105 shadow-md"
-                >
+                <Link href="/contact-us" className="inline-block bg-[#7ed957] text-white font-semibold py-1.5 px-3 rounded-lg hover:bg-[#6cc44a] transition-all duration-300 shadow-md hover:shadow-xl hidden sm:inline-block" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                     Contact Us
                 </Link>
 
