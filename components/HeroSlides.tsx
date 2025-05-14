@@ -7,31 +7,31 @@ import Image from 'next/image';
 const heroSlides = [
     {
         label: 'Himalayan Pink',
-        image: '/image/img1.png',
+        image: '/image/img2.png',
         description: 'Premium Himalayan Pink Salt for culinary, wellness, and decor needs.',
         href: '/products/himalayan-pink',
     },
     {
         label: 'Vegetables',
-        image: '/image/img1.png',
+        image: '/image/img2.png',
         description: 'Fresh, organic vegetables sourced from top farms worldwide.',
         href: '/products/vegetables',
     },
     {
         label: 'Fruits',
-        image: '/image/img1.png',
+        image: '/image/img2.png',
         description: 'Juicy fruits packed with natural sweetness and nutrition.',
         href: '/products/fruits',
     },
     {
         label: 'Rice',
-        image: '/image/img1.png',
+        image: '/image/img2.png',
         description: 'High-quality rice varieties, including Basmati and Sella.',
         href: '/products/rice',
     },
     {
         label: 'Cotton',
-        image: '/image/img1.png',
+        image: '/image/img2.png',
         description: 'Sustainable cotton for textiles and industrial applications.',
         href: '/products/cotton',
     },
@@ -140,12 +140,12 @@ export default function HeroSection() {
                                     height={300}
                                     className="w-full max-w-md mx-auto rounded-xl shadow-2xl object-cover"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-xl" />
+                                <div />
                             </div>
                         </motion.div>
                     </motion.div>
                 </AnimatePresence>
-
+                {/* className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-xl" */}
                 {/* Navigation Dots */}
                 <div className="flex justify-center mt-8 space-x-2">
                     {heroSlides.map((_, idx) => (
