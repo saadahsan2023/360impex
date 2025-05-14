@@ -1,9 +1,7 @@
-// import Image from "next/image";
-
 export default function Home() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      
-    </h1>
+    <main className="p-8">
+      <h1 className="text-3xl font-bold underline">Welcome to 360 Impex</h1>
+    </main>
   );
 }

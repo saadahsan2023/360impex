@@ -58,8 +58,8 @@ const menuStructure = [
             },
         ],
     },
-    { label: 'Services', href: '/products' },
-    { label: 'Request a Quote', href: '/contact' },
+    { label: 'Services', href: '/services' },
+    { label: 'Request a Quote', href: '/request-a-quote' },
 ];
 
 export default function Header() {
@@ -130,7 +130,7 @@ export default function Header() {
                                                     {main.subItems.map((subItem, j) => (
                                                         <Link
                                                             key={j}
-                                                            href="#"
+                                                            href={subItem}
                                                             className="block px-4 py-2 text-sm text-gray-300 hover:text-[#7ed957] hover:bg-gray-700"
                                                         >
                                                             {subItem}
@@ -148,8 +148,8 @@ export default function Header() {
 
                 {/* Contact Us Button - Right */}
                 <Link
-                    href="/contact"
-                    className="bg-[#7ed957] text-gray-900 px-4 py-2 rounded-full font-semibold hover:bg-[#6cc44a] transition-transform duration-200 transform hover:scale-105 shadow-md"
+                    href="/contact-us"
+                    className="bg-[#7ed957] text-white px-4 py-2 rounded-full font-semibold hover:bg-[#6cc44a] transition-transform duration-200 transform hover:scale-105 shadow-md"
                 >
                     Contact Us
                 </Link>
