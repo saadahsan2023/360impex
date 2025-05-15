@@ -1,0 +1,49 @@
+const menuStructure = [
+    {
+        label: 'Himalayan Pink',
+        subItems: [
+            { label: 'Edible Salt', href: '/products/himalayan-pink/edible-salt' },
+            { label: 'Himalayan Salt Lamps', href: '/products/himalayan-pink/salt-lamps' },
+            { label: 'Animal Lick Salt', href: '/products/himalayan-pink/animal-lick-salt' },
+            { label: 'Decorative Products', href: '/products/himalayan-pink/decorative-products' },
+            { label: 'Health and Wellness Products', href: '/products/himalayan-pink/health-wellness' },
+            { label: 'Industrial Salt', href: '/products/himalayan-pink/industrial-salt' },
+        ],
+    },
+    {
+        label: 'Vegetables',
+        subItems: [
+            { label: 'Onions', href: '/products/vegetables/onions' },
+            { label: 'Potatoes', href: '/products/vegetables/potatoes' },
+            { label: 'Garlic', href: '/products/vegetables/garlic' },
+            { label: 'Ginger', href: '/products/vegetables/ginger' },
+            { label: 'Dry Chilies', href: '/products/vegetables/dry-chilies' },
+            { label: 'Bitter Gourd (Karela)', href: '/products/vegetables/bitter-gourd' },
+        ],
+    },
+    {
+        label: 'Fruits',
+        subItems: [
+            { label: 'Mangoes', href: '/products/fruits/mangoes' },
+            { label: 'Apples', href: '/products/fruits/apples' },
+            { label: 'Bananas', href: '/products/fruits/bananas' },
+            { label: 'Pomegranates', href: '/products/fruits/pomegranates' },
+            { label: 'Dates', href: '/products/fruits/dates' },
+        ],
+    },
+    {
+        label: 'Rice',
+        subItems: [
+            { label: 'Basmati Rice', href: '/products/rice/basmati' },
+            { label: 'Non Basmati Rice', href: '/products/rice/non-basmati' },
+            { label: 'Sella Rice', href: '/products/rice/sella' },
+        ],
+    },
+    {
+        label: 'Cotton',
+        subItems: [
+            { label: 'Desi Cotton (Gossypium arboreum)', href: '/products/cotton/desi' },
+            { label: 'American Cotton (Gossypium hirsutum)', href: '/products/cotton/american' },
+        ],
+    },
+];
