@@ -114,18 +114,23 @@ export default function Footer() {
                             );
                         })}
                     </div>
-                    <p className="text-sm text-gray-400 mb-1">
-                        Email: <a href="mailto:info@360impex.com" className="hover:text-[#7ed957] transition">info@360impex.com</a>
+                    <p className="text-sm text-gray-400">
+                        Phone: <a href="tel:+491529061160" className="hover:text-[#7ed957] transition">+49 152 9061160</a>
                     </p>
                     <p className="text-sm text-gray-400">
-                        WhatsApp: <a href="tel:+923001234567" className="hover:text-[#7ed957] transition">+92 300 1234567</a>
+                        WhatsApp: <a href="tel:+491529061160" className="hover:text-[#7ed957] transition">+49 152 9061160</a>
                     </p>
+                    <p className="text-sm text-gray-400 mb-1">
+                        Email: <a href="mailto:info@360impex.com" className="hover:text-[#7ed957] transition">admin@360impex.com</a>
+                    </p>
+
+
                 </div>
             </div>
 
             {/* Copyright and Developer Credit */}
             <div className="max-w-7xl mx-auto mt-8 pt-6 border-t border-gray-700 text-center text-sm text-gray-400">
-                © {new Date().getFullYear()} 360 Impex. All rights reserved. | Developed by <a href="https://digipoemarketingagency.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#7ed957] transition">DigiPoe Marketing Agency</a>
+                © {new Date().getFullYear()} 360 Impex. All rights reserved. | Developed by <a href="https://digipoe.vercel.app" target="_blank" rel="noopener noreferrer" className="hover:text-[#7ed957] transition"> <link rel="stylesheet" href="/" /> Digi Poe </a>
             </div>
         </footer>
 

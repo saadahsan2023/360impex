@@ -5,36 +5,29 @@ import Link from 'next/link';
 const steps = [
     {
         icon: (
-            <svg className="w-12 h-12 text-[#7ed957]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4"></path>
-            </svg>
+           <img src="/icon/pickaxe.svg" alt="Trade Icon" className="w-12 h-12" />
+
         ),
         title: 'Hand-Mined',
         description: 'At 360 Impex, we hand-mine Himalayan Pink Salt to maintain its purity and quality.',
     },
     {
         icon: (
-            <svg className="w-12 h-12 text-[#7ed957]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 5l-6 6m0 0l-6-6m6 6v12"></path>
-            </svg>
+         <img src="/icon/pottery-colored.png" alt="Trade Icon" className="w-12 h-12" />
         ),
         title: 'Artisan-Crafted',
         description: 'Our artisans craft each product into unique shapes with care and tradition.',
     },
     {
         icon: (
-            <svg className="w-12 h-12 text-[#7ed957]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v8m-4-4h8"></path>
-            </svg>
+          <img src="/icon/artwork.svg" alt="Trade Icon" className="w-12 h-12" />
         ),
         title: 'Artworks Designed',
         description: 'Thoughtful design work ensures our products are both functional and beautiful.',
     },
     {
         icon: (
-            <svg className="w-12 h-12 text-[#7ed957]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20 12H4m8-8v16"></path>
-            </svg>
+          <img src="/icon/delivered.svg" alt="Trade Icon" className="w-12 h-12" />
         ),
         title: 'Delivered',
         description: 'Products are carefully packed at our facility and shipped to your doorstep.',

@@ -84,7 +84,7 @@ export default function Testimonials() {
                         className="text-3xl sm:text-4xl font-bold mb-10 relative"
                         style={{ fontFamily: "'Montserrat', sans-serif" }}
                     >
-                        Trusted by 3+ million business owners worldwide
+                        Trusted by 2+ million business owners worldwide
                         <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-[#7ed957] rounded-full"></span>
                     </h2>
 

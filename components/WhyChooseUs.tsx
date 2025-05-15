@@ -33,14 +33,14 @@ const features = [
     },
 ];
 
-const additionalIcons = [
-    { name: 'Global Reach', icon: '🌍' },
-    { name: 'Customer Care', icon: '🤝' },
-    { name: 'Innovation', icon: '💡' },
-    { name: 'Language', icon: '🌐' },
-    { name: 'Ingenuity', icon: '🔧' },
-    { name: 'Innovation', icon: '🚀' },
-];
+// const additionalIcons = [
+//     { name: 'Global Reach', icon: '🌍' },
+//     { name: 'Customer Care', icon: '🤝' },
+//     { name: 'Innovation', icon: '💡' },
+//     { name: 'Language', icon: '🌐' },
+//     { name: 'Ingenuity', icon: '🔧' },
+//     { name: 'Innovation', icon: '🚀' },
+// ];
 
 export default function WhyChooseUs() {
     return (
@@ -86,7 +86,7 @@ export default function WhyChooseUs() {
                     <div className="relative">
                         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/wave.png')] opacity-10" />
                         <div className="relative flex justify-center gap-6 flex-wrap">
-                            {additionalIcons.map((item, idx) => (
+                            {/* {additionalIcons.map((item, idx) => (
                                 <motion.div
                                     key={idx}
                                     initial={{ opacity: 0, scale: 0.8 }}
@@ -97,7 +97,7 @@ export default function WhyChooseUs() {
                                 >
                                     {item.icon}
                                 </motion.div>
-                            ))}
+                            ))} */}
                         </div>
                     </div>
                 </motion.div>

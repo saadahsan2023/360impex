@@ -46,7 +46,7 @@ export default function FeaturedProducts() {
 
                 {/* Subtext */}
                 <p className="text-gray-400 text-sm sm:text-base max-w-2xl mx-auto mb-10">
-                    With satisfied clients in over 80+ countries, you can trust us to meet your needs.
+                    With satisfied clients in over 50+ countries, you can trust us to meet your needs.
                 </p>
 
                 {/* Stats Grid */}

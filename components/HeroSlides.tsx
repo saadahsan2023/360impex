@@ -7,31 +7,31 @@ import Image from 'next/image';
 const heroSlides = [
     {
         label: 'Himalayan Pink',
-        image: '/image/img2.png',
+        image: '/image/salt.png',
         description: 'Premium Himalayan Pink Salt for culinary, wellness, and decor needs.',
         href: '/products/himalayan-pink',
     },
     {
         label: 'Vegetables',
-        image: '/image/img2.png',
+        image: '/image/vegis.jpg',
         description: 'Fresh, organic vegetables sourced from top farms worldwide.',
         href: '/products/vegetables',
     },
     {
         label: 'Fruits',
-        image: '/image/img2.png',
+        image: '/image/friuts.png',
         description: 'Juicy fruits packed with natural sweetness and nutrition.',
         href: '/products/fruits',
     },
     {
         label: 'Rice',
-        image: '/image/img2.png',
+        image: '/image/rice.jpg',
         description: 'High-quality rice varieties, including Basmati and Sella.',
         href: '/products/rice',
     },
     {
         label: 'Cotton',
-        image: '/image/img2.png',
+        image: '/image/cotton.jpg',
         description: 'Sustainable cotton for textiles and industrial applications.',
         href: '/products/cotton',
     },
@@ -43,7 +43,7 @@ export default function HeroSection() {
     useEffect(() => {
         const interval = setInterval(() => {
             setIndex((prevIndex) => (prevIndex + 1) % heroSlides.length);
-        }, 4500); // Reduced to 4.5 seconds for faster slide changes
+        }, 4000); // 5 seconds slide interval
         return () => clearInterval(interval);
     }, []);
 
@@ -81,73 +81,76 @@ export default function HeroSection() {
     };
 
     return (
-        <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 text-white py-12 sm:py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+        <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 text-white py-12 sm:py-16 px-4 sm:px-6 lg:px-8 relative">
             {/* Animated Background with Subtle Gradient Shift */}
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,_rgba(126,217,87,0.05)_0%,_rgba(44,62,80,0.1)_70%)] animate-gradient-shift" />
-            {/* Removed wave texture, added optional mountain-like gradient */}
 
             <div className="max-w-7xl mx-auto relative z-10">
-                <AnimatePresence mode="wait">
-                    <motion.div
-                        key={index}
-                        className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-10"
-                        initial="enter"
-                        animate="center"
-                        exit="exit"
-                    >
-                        {/* Text Content (Left) */}
+                <div className="relative min-h-[500px] lg:min-h-[400px]">
+                    <AnimatePresence mode="wait">
                         <motion.div
-                            className="w-full lg:w-1/2 text-left order-last lg:order-first"
-                            variants={textVariants}
+                            key={index}
+                            className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-10 absolute inset-0"
+                            initial="enter"
+                            animate="center"
+                            exit="exit"
+                            style={{ height: '100%' }} // Full height of the container
                         >
-                            <h1
-                                className="text-3xl sm:text-4xl lg:text-5xl font-extrabold mb-4 leading-tight tracking-tight"
-                                style={{ fontFamily: "'Montserrat', sans-serif" }}
+                            {/* Text Content (Left) */}
+                            <motion.div
+                                className="w-full lg:w-1/2 text-left order-last lg:order-first"
+                                variants={textVariants}
                             >
-                                Discover <span className="text-[#7ed957]">{currentSlide.label}</span>
-                            </h1>
-                            <p className="text-gray-300 text-base sm:text-lg lg:text-xl mb-6 max-w-md">
-                                {currentSlide.description}
-                            </p>
-                            <div className="flex space-x-4">
-                                <Link
-                                    href={currentSlide.href}
-                                    className="inline-block bg-[#7ed957] text-white font-semibold py-3 px-6 rounded-lg hover:bg-[#6cc44a] transition-all duration-300 shadow-md hover:shadow-xl"
+                                <h1
+                                    className="text-3xl sm:text-4xl lg:text-5xl font-extrabold mb-4 leading-tight tracking-tight"
                                     style={{ fontFamily: "'Montserrat', sans-serif" }}
                                 >
-                                    Shop Now
-                                </Link>
-                                <Link
-                                    href={currentSlide.href}
-                                    className="inline-block text-white font-medium py-2 px-4 rounded-md border border-transparent hover:border-[#7ed957] hover:text-[#7ed957] hover:bg-gray-800/50 transition-all duration-300"
-                                    style={{ fontFamily: "'Montserrat', sans-serif" }}
-                                >
-                                    Learn More
-                                </Link>
-                            </div>
-                        </motion.div>
+                                    Discover <span className="text-[#7ed957]">{currentSlide.label}</span>
+                                </h1>
+                                <p className="text-gray-300 text-base sm:text-lg lg:text-xl mb-6 max-w-md">
+                                    {currentSlide.description}
+                                </p>
+                                <div className="flex space-x-4">
+                                    <Link
+                                        href={currentSlide.href}
+                                        className="inline-block bg-[#7ed957] text-white font-semibold py-3 px-6 rounded-lg hover:bg-[#6cc44a] transition-all duration-300 shadow-md hover:shadow-xl"
+                                        style={{ fontFamily: "'Montserrat', sans-serif" }}
+                                    >
+                                        Shop Now
+                                    </Link>
+                                    <Link
+                                        href={currentSlide.href}
+                                        className="inline-block text-white font-medium py-2 px-4 rounded-md border border-transparent hover:border-[#7ed957] hover:text-[#7ed957] hover:bg-gray-800/50 transition-all duration-300"
+                                        style={{ fontFamily: "'Montserrat', sans-serif" }}
+                                    >
+                                        Learn More
+                                    </Link>
+                                </div>
+                            </motion.div>
 
-                        {/* Image (Right) */}
-                        <motion.div
-                            className="w-full lg:w-1/2 relative order-first lg:order-last"
-                            variants={imageVariants}
-                        >
-                            <div className="relative">
-                                <Image
-                                    src={currentSlide.image}
-                                    alt={currentSlide.label}
-                                    width={450}
-                                    height={300}
-                                    className="w-full max-w-md mx-auto rounded-xl shadow-2xl object-cover"
-                                />
-                                <div />
-                            </div>
+                            {/* Image (Right) */}
+                            <motion.div
+                                className="w-full lg:w-1/2 relative order-first lg:order-last"
+                                variants={imageVariants}
+                            >
+                                <div className="relative">
+                                    <Image
+                                        src={currentSlide.image}
+                                        alt={currentSlide.label}
+                                        width={450}
+                                        height={300}
+                                        className="w-full max-w-md mx-auto rounded-xl shadow-2xl object-cover"
+                                    />
+                                    <div/>
+                                    {/* className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-xl" */}
+                                </div>
+                            </motion.div>
                         </motion.div>
-                    </motion.div>
-                </AnimatePresence>
-                {/* className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-xl" */}
-                {/* Navigation Dots */}
-                <div className="flex justify-center mt-8 space-x-2">
+                    </AnimatePresence>
+                </div>
+
+                {/* Navigation Dots (Ensured visibility) */}
+                <div className="flex justify-center mt-8 space-x-2" style={{ zIndex: 20 }}>
                     {heroSlides.map((_, idx) => (
                         <motion.button
                             key={idx}
