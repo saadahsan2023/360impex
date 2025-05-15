@@ -18,7 +18,7 @@ const featuredProducts = [
     },
     {
         label: 'Fruits',
-        href: '/products/fruits',
+        href: '/products/Fruits',
         image: '/image/img1.png',
         description: 'Juicy and delicious fruits, packed with natural sweetness and nutrition.',
     },

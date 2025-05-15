@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Your Website Title",
-  description: "Your description here",
+  title: "360 impex",
+  description: "Connecting Pakistan to International Markets",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

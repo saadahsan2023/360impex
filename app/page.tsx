@@ -5,7 +5,7 @@ import Section from '../components/Section';
 import OurProducts from '../components/OurProducts';
 import WhyChooseUs from '../components/WhyChooseUs';
 import Testimonials from '../components/Testimonials';
-import AboutUs from '../components/AboutUs';
+
 export default function Home() {
   return (
     <main>
