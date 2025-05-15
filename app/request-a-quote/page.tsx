@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const menuStructure = [
     {
@@ -66,6 +66,45 @@ export default function RequestQuote() {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [showAlert, setShowAlert] = useState(false);
 
+    // Move styles injection to useEffect to ensure it runs only in the browser
+    useEffect(() => {
+        const styles = `
+            @keyframes slideIn {
+                from {
+                    transform: translateY(100%);
+                    opacity: 0;
+                }
+                to {
+                    transform: translateY(0);
+                    opacity: 1;
+                }
+            }
+            .animate-slide-in {
+                animation: slideIn 0.3s ease-out forwards;
+            }
+            @keyframes gradientShift {
+                0% { background-position: 0% 50%; }
+                50% { background-position: 100% 50%; }
+                100% { background-position: 0% 50%; }
+            }
+            .animate-gradient-shift {
+                background-size: 200% 200%;
+                animation: gradientShift 15s ease infinite;
+            }
+            .border-[linear-gradient(to_right,#7ed957,#7ed957,#7ed957)] {
+                border-image: linear-gradient(to right, #7ed957, #7ed957, #7ed957) 1;
+            }
+        `;
+        const styleSheet = document.createElement('style');
+        styleSheet.textContent = styles;
+        document.head.appendChild(styleSheet);
+
+        // Cleanup to avoid duplicate styles on re-render
+        return () => {
+            document.head.removeChild(styleSheet);
+        };
+    }, []); // Empty dependency array ensures this runs only once on mount
+
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const { name, value } = e.target;
         setFormData((prev) => ({ ...prev, [name]: value }));
@@ -110,7 +149,6 @@ export default function RequestQuote() {
         }
         if (!formData.phone.trim()) newErrors.phone = 'Phone number is required';
         if (selectedProducts.length === 0) newErrors.products = 'Please select at least one product';
-        // Fix subcategory validation syntax
         selectedProducts.forEach((product) => {
             if (selectedSubCategories[product]?.length === 0) {
                 newErrors[`subCategories-${product}`] = `Please select at least one subcategory for ${product}`;
@@ -154,7 +192,7 @@ export default function RequestQuote() {
     return (
         <section className="bg-gradient-to-r from-gray-900 to-gray-800 text-white py-12 sm:py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(126,217,87,0.1)_0%,_rgba(44,62,80,0.3)_70%)] animate-gradient-shift" />
-            <div className="max-w-4xl mx-auto bg-white/90 backdrop-blur-sm text-gray-900 p-4 sm:p-6 md:p-8 rounded-xl shadow-lg border-4 border-[linear-gradient(to_right,#7ed957,#a4e67a,#7ed957)] relative z-10">
+            <div className="max-w-4xl mx-auto bg-white/90 backdrop-blur-sm text-gray-900 p-4 sm:p-6 md:p-8 rounded-xl shadow-lg border-4 border-[linear-gradient(to_right,#7ed957,#7ed957,#7ed957)] relative z-10">
                 <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-6 sm:mb-8 md:mb-10 text-center text-gray-800" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                     Request a Quote
                 </h1>
@@ -326,35 +364,3 @@ export default function RequestQuote() {
         </section>
     );
 }
-
-// CSS for animations and border (add to globals.css or a stylesheet)
-const styles = `
-    @keyframes slideIn {
-        from {
-            transform: translateY(100%);
-            opacity: 0;
-        }
-        to {
-            transform: translateY(0);
-            opacity: 1;
-        }
-    }
-    .animate-slide-in {
-        animation: slideIn 0.3s ease-out forwards;
-    }
-    @keyframes gradientShift {
-        0% { background-position: 0% 50%; }
-        50% { background-position: 100% 50%; }
-        100% { background-position: 0% 50%; }
-    }
-    .animate-gradient-shift {
-        background-size: 200% 200%;
-        animation: gradientShift 15s ease infinite;
-    }
-    .border-[linear-gradient(to_right,#7ed957,#a4e67a,#7ed957)] {
-        border-image: linear-gradient(to right, #7ed957, #a4e67a, #7ed957) 1;
-    }
-`;
-const styleSheet = document.createElement('style');
-styleSheet.textContent = styles;
-document.head.appendChild(styleSheet);
