@@ -31,18 +31,18 @@ export default function GetAQuote() {
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
                             <Link
-                                href="/get-quote"
+                                href="/request-a-quote"
                                 className="inline-flex items-center justify-center bg-[#7ed957] text-white font-semibold py-3 px-6 rounded-lg hover:bg-[#6cc44a] transition-all duration-300 shadow-md hover:shadow-lg"
                                 style={{ fontFamily: "'Montserrat', sans-serif" }}
                             >
                                 Get a Quote
                             </Link>
                             <Link
-                                href="/book-meeting"
+                                href="/CalMeeting"
                                 className="inline-flex items-center justify-center bg-[#7ed957] text-white font-semibold py-3 px-6 rounded-lg hover:bg-[#6cc44a] transition-all duration-300 shadow-md hover:shadow-lg"
                                 style={{ fontFamily: "'Montserrat', sans-serif" }}
                             >
-                                Book a Meeting
+                                Contact Us
                             </Link>
                         </div>
                     </div>

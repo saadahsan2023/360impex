@@ -18,8 +18,10 @@
         "name": "next"
       }
     ],
+    "baseUrl": ".", // Or "./src" if your lib is in src/lib
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["src/*"] // Or "@/*": ["./*"] if lib is at root/lib
+      // Or specifically for lib: "@/lib/*": ["lib/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "lib/firebase.js"],

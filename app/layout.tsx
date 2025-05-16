@@ -3,7 +3,7 @@ import Header from '@/components/Header';
 import './globals.css';
 import { Geist, Geist_Mono } from "next/font/google";
 import Footer from '@/components/Footer';
-
+import CalButton from "../components/CalMeeting";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -26,6 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <RouteLoader />
         <Header />
         {children}
+        <CalButton />
         <Footer />
       </body>
     </html>

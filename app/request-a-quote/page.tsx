@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react'; // Removed useEffect as it's not used
 import { ref, push } from "firebase/database"; // For Realtime Database
-import { database } from "@/lib/firebase"; // CRITICAL: Ensure 'database' is the Realtime Database instance from your firebase setup
+import { database } from "../../lib/firebase"; // CRITICAL: Ensure 'database' is the Realtime Database instance from your firebase setup
 
 // Define types for better management
 interface SubItem {

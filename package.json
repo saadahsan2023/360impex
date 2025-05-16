@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@calcom/embed-react": "^1.5.3",
     "@headlessui/react": "^2.2.3",
     "clsx": "^2.1.1",
     "firebase": "^11.7.3",

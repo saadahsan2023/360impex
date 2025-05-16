@@ -5,6 +5,8 @@ import Section from '../components/Section';
 import OurProducts from '../components/OurProducts';
 import WhyChooseUs from '../components/WhyChooseUs';
 import Testimonials from '../components/Testimonials';
+// import CalMeeting from "@/components/CalMeeting";
+
 
 export default function Home() {
   return (
@@ -17,6 +19,7 @@ export default function Home() {
       <WhyChooseUs />
       <OurProducts />
       <Testimonials />
+      {/* <CalMeeting/> */}
     </main>
   );
 }
