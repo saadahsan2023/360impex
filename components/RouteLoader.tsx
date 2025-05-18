@@ -22,8 +22,13 @@ export default function RouteLoader() {
     if (!loading && !isPending) return null;
 
     return (
-        <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-90 z-50">
-            <div className="animate-spin h-12 w-12 border-4 border-[#7ed957] border-t-transparent rounded-full"></div>
+        <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-gray-900 bg-opacity-50 backdrop-blur-sm z-50">
+            <div className="relative">
+                <div className="animate-spin h-16 w-16 border-4 border-t-[#7ed957] border-b-[#7ed957] border-l-transparent border-r-transparent rounded-full"></div>
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[#7ed957] text-xl font-semibold" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                    Loading...
+                </div>
+            </div>
         </div>
     );
 }

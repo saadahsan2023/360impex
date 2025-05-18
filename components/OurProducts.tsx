@@ -38,7 +38,7 @@ export default function GetAQuote() {
                                 Get a Quote
                             </Link>
                             <Link
-                                href="/CalMeeting"
+                                href="/contact-us"
                                 className="inline-flex items-center justify-center bg-[#7ed957] text-white font-semibold py-3 px-6 rounded-lg hover:bg-[#6cc44a] transition-all duration-300 shadow-md hover:shadow-lg"
                                 style={{ fontFamily: "'Montserrat', sans-serif" }}
                             >

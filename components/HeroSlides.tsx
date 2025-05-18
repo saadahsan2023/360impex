@@ -9,31 +9,36 @@ const heroSlides = [
         label: 'Himalayan Pink',
         image: '/image/salt.png',
         description: 'Premium Himalayan Pink Salt for culinary, wellness, and decor needs.',
-        href: '/products/himalayan-pink',
+        href: '/request-a-quote',
+        path: '/products/himalayan-pink',
     },
     {
         label: 'Vegetables',
         image: '/image/vegis.jpg',
         description: 'Fresh, organic vegetables sourced from top farms worldwide.',
-        href: '/products/vegetables',
+        href: '/request-a-quote',
+        path: '/products/vegetables',
     },
     {
         label: 'Fruits',
         image: '/image/friuts.png',
         description: 'Juicy fruits packed with natural sweetness and nutrition.',
-        href: '/products/fruits',
+        href: '/request-a-quote',
+        path: '/products/Fruits',
     },
     {
         label: 'Rice',
         image: '/image/rice.jpg',
         description: 'High-quality rice varieties, including Basmati and Sella.',
-        href: '/products/rice',
+        href: '/request-a-quote',
+        path: '/products/rice',
     },
     {
         label: 'Cotton',
         image: '/image/cotton.jpg',
         description: 'Sustainable cotton for textiles and industrial applications.',
-        href: '/products/cotton',
+        href: '/request-a-quote',
+        path: '/products/cotton',
     },
 ];
 
@@ -119,7 +124,7 @@ export default function HeroSection() {
                                         Shop Now
                                     </Link>
                                     <Link
-                                        href={currentSlide.href}
+                                        href={currentSlide.path}
                                         className="inline-block text-white font-medium py-2 px-4 rounded-md border border-transparent hover:border-[#7ed957] hover:text-[#7ed957] hover:bg-gray-800/50 transition-all duration-300"
                                         style={{ fontFamily: "'Montserrat', sans-serif" }}
                                     >
@@ -141,7 +146,7 @@ export default function HeroSection() {
                                         height={300}
                                         className="w-full max-w-md mx-auto rounded-xl shadow-2xl object-cover"
                                     />
-                                    <div/>
+                                    <div />
                                     {/* className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-xl" */}
                                 </div>
                             </motion.div>

@@ -5,15 +5,15 @@ import Image from 'next/image';
 
 const featuredProducts = [
     {
-        label: 'Himalayan Pink',
+        label: 'Himalayan Pink Salt',
         href: '/products/himalayan-pink',
-        image: '/image/img1.png',
+        image: '/image/himalayan.jpg',
         description: 'Discover our premium Himalayan Pink Salt products, perfect for culinary, wellness, and decor.',
     },
     {
         label: 'Vegetables',
         href: '/products/vegetables',
-        image: '/image/img1.png',
+        image: '/image/himalayan.jpg',
         description: 'Fresh and organic vegetables, sourced directly from the finest farms.',
     },
     {
