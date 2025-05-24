@@ -67,7 +67,7 @@ export default function HimalayanPinkEdibleSalt() {
                 <div className="flex justify-center md:justify-end">
                     <div className="relative w-full max-w-md h-[320px] sm:h-[400px]">
                         <Image
-                            src="/image/Edible-salt.jpg"
+                            src="/edible-salt.jpg"
                             alt="Himalayan Pink Edible Salt"
                             layout="fill"
                             objectFit="cover"

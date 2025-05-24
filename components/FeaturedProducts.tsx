@@ -7,19 +7,19 @@ const featuredProducts = [
     {
         label: 'Himalayan Pink Salt',
         href: '/products/himalayan-pink',
-        image: '/image/himalayan.jpg',
+        image: '/main.jpg',
         description: 'Discover our premium Himalayan Pink Salt products, perfect for culinary, wellness, and decor.',
     },
     {
         label: 'Vegetables',
         href: '/products/vegetables',
-        image: '/image/himalayan.jpg',
+        image: '/check2.jpg',
         description: 'Fresh and organic vegetables, sourced directly from the finest farms.',
     },
     {
         label: 'Fruits',
         href: '/products/Fruits',
-        image: '/image/img1.png',
+        image: '/check2.jpg',
         description: 'Juicy and delicious fruits, packed with natural sweetness and nutrition.',
     },
     {

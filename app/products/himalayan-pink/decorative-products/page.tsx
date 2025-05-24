@@ -76,7 +76,7 @@ export default function DecorativeProducts() {
                     <div className="flex justify-center md:justify-end">
                         <div className="relative w-full max-w-md h-[320px] sm:h-[400px] max-h-[400px]">
                             <Image
-                                src="/image/decor.jpg"
+                                src="/decorative-salt.jpg"
                                 alt="Decorative Products"
                                 layout="fill"
                                 objectFit="cover"

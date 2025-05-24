@@ -76,7 +76,7 @@ export default function AnimalLickSalt() {
                     <div className="flex justify-center md:justify-end">
                         <div className="relative w-full max-w-md h-[320px] sm:h-[400px] max-h-[400px]">
                             <Image
-                                src="/image/AnimalLickSalt.jpg"
+                                src="/lick-salt.jpg"
                                 alt="Animal Lick Salt"
                                 layout="fill"
                                 objectFit="cover"
