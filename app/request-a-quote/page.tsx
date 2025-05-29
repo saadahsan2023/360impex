@@ -216,7 +216,7 @@ export default function RequestQuote() {
                         {errors.phone && <p className="text-red-400 text-xs mt-1">{errors.phone}</p>}
                     </div>
                     <div>
-                        <label htmlFor="business" className="block text-sm font-medium text-gray-300 mb-1">Company Name (Optional)</label>
+                        <label htmlFor="business" className="block text-sm font-medium text-gray-300 mb-1">Company Name</label>
                         <input type="text" name="business" id="business" value={formData.business} onChange={handleChange} className="w-full bg-gray-700 text-white border-gray-600 rounded-md p-2.5 focus:ring-[#7ed957] focus:border-[#7ed957]" />
                     </div>
                     <div>

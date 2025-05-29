@@ -21,8 +21,9 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
+    // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body>
         <RouteLoader />
         <Header />
         {children}

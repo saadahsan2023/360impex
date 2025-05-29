@@ -41,7 +41,7 @@ export default function AboutUs() {
                             className="text-white text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight mb-6"
                             style={{ fontFamily: "'Montserrat', sans-serif" }}
                         >
-                            Where Global Trade Meets Quality —{' '}
+                            Where Global Trade Meets Quality<br />{' '}
                             <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#7ed957] to-[#a4e67a]">
                                 360 Impex
                             </span>
@@ -280,7 +280,7 @@ export default function AboutUs() {
                         Whether you're looking to export premium Pakistani products or import high-quality goods, 360 Impex is your trusted partner in global trade. Let's work together to unlock new opportunities and grow your business.
                     </p>
                     <Link
-                        href="/contact"
+                        href="/contact-us"
                         className="inline-block bg-[#7ed957] text-white font-semibold py-3 px-6 rounded-lg hover:bg-[#6cc44a] transition-all duration-300 shadow-md hover:shadow-xl"
                         style={{ fontFamily: "'Montserrat', sans-serif" }}
                     >

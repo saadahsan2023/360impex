@@ -55,7 +55,9 @@ const menuStructure = [
         ],
     },
     { label: 'Services', href: '/services' },
-    { label: 'Request a Quote', href: '/request-a-quote' },
+    { label: 'Contact Us', href: 'contact-us' },
+
+
 ];
 
 export default function Header() {
@@ -145,11 +147,11 @@ export default function Header() {
 
                     {/* Removed Contact Us Button from mobile, shown only on desktop */}
                     <Link
-                        href="/contact-us"
-                        className="bg-[#7ed957] text-white font-semibold py-1.5 px-3 rounded-lg hover:bg-[#6cc44a] transition-all duration-300 shadow-md hover:shadow-xl hidden sm:inline-block"
+                        href="/request-a-quote"
+                        className="bg-[#7ed957] text-white  py-1.5 px-3 rounded-lg hover:bg-[#6cc44a] transition-all duration-300 shadow-md hover:shadow-xl hidden sm:inline-block"
                         style={{ fontFamily: "'Montserrat', sans-serif" }}
                     >
-                        Contact Us
+                        Request a Quote
                     </Link>
 
                     {/* Mobile Menu Toggle Button */}

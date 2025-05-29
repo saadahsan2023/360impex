@@ -8,7 +8,7 @@ const featuredProducts = [
         label: 'Himalayan Pink Salt',
         href: '/products/himalayan-pink',
         image: '/main.jpg',
-        description: 'Discover our premium Himalayan Pink Salt products, perfect for culinary, wellness, and decor.',
+        description: 'Our premium Himalayan Pink Salt products, perfect for culinary, wellness, and decor.',
     },
     {
         label: 'Vegetables',
@@ -79,10 +79,10 @@ export default function FeaturedProducts() {
                                 </p>
                                 <Link
                                     href={product.href}
-                                    className="inline-block bg-[#7ed957] text-white font-semibold py-2 px-4 rounded-full hover:bg-[#6cc44a] transition-colors duration-300"
+                                    className="inline-block bg-[#7ed957] text-white py-1 px-3.5 rounded-full hover:bg-[#6cc44a] transition-colors duration-300"
                                     style={{ fontFamily: "'Montserrat', sans-serif" }}
                                 >
-                                    View Product
+                                    Explore More
                                 </Link>
                             </div>
                         </div>
