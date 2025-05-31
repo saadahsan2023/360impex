@@ -4,29 +4,95 @@ import { motion } from 'framer-motion';
 
 const testimonials = [
     {
-        quote: 'Exceptional quality and purity! The Himalayan pink salt we received was top-notch, and our customers absolutely love it. Highly recommended!',
-        author: 'Sarah L.',
-        location: 'UK',
-        rating: 5,
+        "quote": "The Himalayan pink salt is of exceptional quality! Our clients love the purity and vibrant color. Will definitely reorder.",
+        "author": "Emma W.",
+        "location": "Australia",
+        "rating": 4.8
     },
     {
-        quote: 'Reliable supply chain, premium salt quality, and great communication every step of the way. Truly a trusted partner!',
-        author: 'Michael R.',
-        location: 'Germany',
-        rating: 5,
+        "quote": "360 Impex delivered premium rice varieties on time. Their customer support is outstanding and made the process seamless.",
+        "author": "Lucas M.",
+        "location": "Canada",
+        "rating": 4.9
     },
     {
-        quote: 'Fast delivery and excellent customer service. The product exceeded our expectations—will order again!',
-        author: 'Priya S.',
-        location: 'India',
-        rating: 5,
+        "quote": "Fantastic service and high-quality vegetables. The packaging was excellent, ensuring freshness upon arrival.",
+        "author": "Sophie K.",
+        "location": "UK",
+        "rating": 5
     },
     {
-        quote: 'Outstanding value and consistency. Perfect for our business needs—highly satisfied!',
-        author: 'John D.',
-        location: 'USA',
-        rating: 5,
+        "quote": "The cotton we sourced was top-grade and perfect for our textile needs. Reliable supplier with great communication.",
+        "author": "Noah T.",
+        "location": "USA",
+        "rating": 4.7
     },
+    {
+        "quote": "Really impressed with the quick delivery and consistent quality of the Himalayan salt products. Highly recommended!",
+        "author": "Hana S.",
+        "location": "Japan",
+        "rating": 4.5
+    },
+    {
+        "quote": "Their basmati rice is aromatic and of superior quality. It’s become a staple in our restaurant’s menu!",
+        "author": "Liam B.",
+        "location": "Germany",
+        "rating": 5
+    },
+    {
+        "quote": "Great experience working with 360 Impex. The fruits were fresh, well-packed, and arrived on schedule.",
+        "author": "Isabella R.",
+        "location": "Brazil",
+        "rating": 4.6
+    },
+    {
+        "quote": "The salt lamps we ordered are stunning and well-crafted. Our customers can’t stop raving about them!",
+        "author": "Ethan J.",
+        "location": "South Africa",
+        "rating": 4.9
+    },
+    {
+        "quote": "Dependable supplier with excellent product quality. The vegetables were fresh and met all our expectations.",
+        "author": "Ava L.",
+        "location": "New Zealand",
+        "rating": 4.8
+    },
+    {
+        "quote": "The team at 360 Impex is professional and responsive. Their Himalayan salt is the best we’ve sourced so far.",
+        "author": "Oliver P.",
+        "location": "France",
+        "rating": 5
+    },
+    {
+        "quote": "Superb quality cotton and timely delivery. It’s been a pleasure doing business with them!",
+        "author": "Mia C.",
+        "location": "Mexico",
+        "rating": 4.7
+    },
+    {
+        "quote": "The rice varieties we ordered were top-notch, and the customer service was exceptional throughout the process.",
+        "author": "James H.",
+        "location": "Singapore",
+        "rating": 4.5
+    },
+    {
+        "quote": "Fast shipping and premium Himalayan pink salt. Perfect for our wellness products. Highly satisfied!",
+        "author": "Chloe N.",
+        "location": "Netherlands",
+        "rating": 4.9
+    },
+    {
+        "quote": "The fruits were fresh, juicy, and well-packaged. 360 Impex is now our go-to supplier for quality produce.",
+        "author": "Alexander G.",
+        "location": "Sweden",
+        "rating": 4.6
+    },
+    {
+        "quote": "Outstanding service and high-quality products. The Himalayan salt exceeded our expectations in every way!",
+        "author": "Lily D.",
+        "location": "UAE",
+        "rating": 5
+    }
 ];
 
 export default function Testimonials() {
@@ -40,21 +106,48 @@ export default function Testimonials() {
         return () => clearInterval(interval); // Cleanup on unmount
     }, []);
 
-    // Fixed renderStars function with explicit JSX
+    // Updated renderStars function to handle decimal ratings and display rating value
     const renderStars = (rating: number) => {
         const stars = [];
-        for (let i = 0; i < 5; i++) {
+        const fullStars = Math.floor(rating); // Full stars
+        const hasHalfStar = rating % 1 >= 0.5; // Check for half star
+
+        // Add full stars
+        for (let i = 0; i < fullStars; i++) {
             stars.push(
-                <span
-                    key={i}
-                    className={i < rating ? 'text-[#7ed957]' : 'text-gray-400'}
-                    style={{ fontSize: '1.25rem' }}
-                >
+                <span key={`full-${i}`} className="text-[#7ed957]" style={{ fontSize: '1.25rem' }}>
                     ★
                 </span>
             );
         }
-        return <div className="flex">{stars}</div>;
+
+        // Add half star if applicable
+        if (hasHalfStar) {
+            stars.push(
+                <span key="half" className="text-[#7ed957]" style={{ fontSize: '1.25rem' }}>
+                    ✯
+                </span>
+            );
+        }
+
+        // Add empty stars to complete 5 stars
+        const remainingStars = 5 - fullStars - (hasHalfStar ? 1 : 0);
+        for (let i = 0; i < remainingStars; i++) {
+            stars.push(
+                <span key={`empty-${i}`} className="text-gray-400" style={{ fontSize: '1.25rem' }}>
+                    ☆
+                </span>
+            );
+        }
+
+        return (
+            <div className="flex items-center gap-2">
+                <div className="flex">{stars}</div>
+                <span className="text-gray-300 text-sm" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                    {rating.toFixed(1)}/5
+                </span>
+            </div>
+        );
     };
 
     // Handle manual navigation
