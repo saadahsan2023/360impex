@@ -99,10 +99,11 @@ export default function HimalayanPink() {
                     </h2>
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
                         {[
-                            { name: 'Himalayan Pink Salt Fine', path: '/products/himalayan-pink-salt-fine' },
+                            { name: 'Edible Salt', path: '/products/himalayan-pink/edible-salt' },
                             { name: 'Himalayan Pink Salt Coarse', path: '/products/himalayan-pink-salt-coarse' },
                             { name: 'Himalayan Pink Salt Crystals', path: '/products/himalayan-pink-salt-crystals' },
                             { name: 'Himalayan Pink Salt Lamps', path: '/products/himalayan-pink-salt-lamps' },
+                            { name: 'Himalayan Pink Salt Edible', path: '/products/himalayan-pink-salt-edible' },
                             { name: 'Himalayan Pink Salt Edible', path: '/products/himalayan-pink-salt-edible' }
                         ].map((product, idx) => (
                             <Link key={idx} href={product.path}>
