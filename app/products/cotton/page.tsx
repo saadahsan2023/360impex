@@ -252,14 +252,14 @@ export default function Cotton() {
                     </h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                         {[
-                            { name: 'Desi Cotton (Gossypium Arboreum)', path: '/products/cotton/desi-cotton-gossypium-arboreum', description: 'A robust and eco-friendly cotton variety, ideal for sustainable textile production.' },
-                            { name: 'American Cotton (Gossypium Hirsutum)', path: '/products/cotton/american-cotton-gossypium-hirsutum', description: 'Premium quality cotton known for its softness and strength, perfect for high-end fabrics.' }
+                            { name: 'Desi Cotton (Gossypium Arboreum)', path: '/products/cotton/desi-cotton-gossypium-arboreum', description: 'A robust and eco-friendly cotton variety, ideal for sustainable textile production.',image: '/decorative-salt.jpg' },
+                            { name: 'American Cotton (Gossypium Hirsutum)', path: '/products/cotton/american-cotton-gossypium-hirsutum', description: 'Premium quality cotton known for its softness and strength, perfect for high-end fabrics.',image: '/decorative-salt.jpg' }
                         ].map((product, idx) => (
                             <Link key={idx} href={product.path}>
                                 <div className="bg-[#2a3b4f] p-6 rounded-xl border border-green card hover-scale">
-                                    <div className="relative w-full h-48 mb-4">
+                                    <div className="relative w-full h-65 mb-4">
                                         <Image
-                                            src="/decorative-salt.jpg"
+                                            src={product.image}
                                             alt={product.name}
                                             layout="fill"
                                             objectFit="cover"

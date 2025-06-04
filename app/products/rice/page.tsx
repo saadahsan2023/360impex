@@ -139,8 +139,6 @@
 
 
 
-
-
 'use client';
 import React, { useEffect } from 'react';
 import Link from 'next/link';
@@ -181,7 +179,7 @@ export default function Rice() {
                 <title>Rice | 360 Impex</title>
                 <meta name="description" content="Discover premium Rice varieties from 360 Impex, perfect for global markets." />
             </Head>
-            <section className="bg-[#141C2C] text-white min-h-screen py-16 sm:py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+            <section className="bg-[#141C2C] text-white min-h-screen(py-16 sm:py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
                 <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     {/* Text Content */}
                     <div className="animate-fade-in-up space-y-6">
@@ -193,7 +191,7 @@ export default function Rice() {
                         </h1>
                         <p
                             className="text-lg sm:text-xl text-gray-300"
-                            style={{ fontFamily: "'Montserrat', sans sans-serif" }}
+                            style={{ fontFamily: "'Montserrat', sans-serif" }}
                         >
                             Staple of Quality
                         </p>
@@ -241,15 +239,15 @@ export default function Rice() {
                     </h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                         {[
-                            { name: 'Basmati Rice', path: '/products/rice/basmati-rice', description: 'Aromatic and long-grain rice, perfect for premium dishes.' },
-                            { name: 'Non-Basmati Rice', path: '/products/rice/non-basmati-rice', description: 'Versatile rice varieties for everyday culinary needs.' },
-                            { name: 'Sella Rice', path: '/products/rice/sella-rice', description: 'Parboiled rice with enhanced texture and flavor.' }
+                            { name: 'Basmati Rice', path: '/products/rice/basmati-rice', description: 'Aromatic and long-grain rice, perfect for premium dishes.', image: '/decorative-salt.jpg' },
+                            { name: 'Non-Basmati Rice', path: '/products/rice/non-basmati-rice', description: 'Versatile rice varieties for everyday culinary needs.', image: '/decorative-salt-2.jpg' },
+                            { name: 'Sella Rice', path: '/products/rice/sella-rice', description: 'Parboiled rice with enhanced texture and flavor.', image: '/decorative-salt-3.jpg' }
                         ].map((product, idx) => (
                             <Link key={idx} href={product.path}>
                                 <div className="bg-[#2a3b4f] p-6 rounded-xl border border-green card hover-scale">
-                                    <div className="relative w-full h-48 mb-4">
+                                    <div className="relative w-full h-65 mb-4">
                                         <Image
-                                            src="/decorative-salt.jpg"
+                                            src={product.image}
                                             alt={product.name}
                                             layout="fill"
                                             objectFit="cover"

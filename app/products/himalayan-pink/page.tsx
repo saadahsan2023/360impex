@@ -239,18 +239,18 @@ export default function HimalayanPink() {
                     </h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                         {[
-                            { name: 'Edible Salt', path: '/products/himalayan-pink/edible-salt', description: 'Pure, mineral-rich salt for culinary excellence.' },
-                            { name: 'Industrial Salt', path: '/products/himalayan-pink/industrial-salt', description: 'High-quality salt for industrial applications.' },
-                            { name: 'Health and Wellness', path: '/products/himalayan-pink/health-and-wellness-products', description: 'Natural salt products for wellness and spa use.' },
-                            { name: 'Himalayan Pink Salt Lamps', path: '/products/himalayan-pink/himalayan-salt-lamps', description: 'Elegant lamps for ambiance and air purification.' },
-                            { name: 'Decorative Products', path: '/products/himalayan-pink/decorative-products', description: 'Unique, handcrafted salt decor items.' },
-                            { name: 'Animal Lick Salt', path: '/products/himalayan-pink/animal-lick-salt', description: 'Nutritious salt licks for livestock health.' }
+                            { name: 'Edible Salt', path: '/products/himalayan-pink/edible-salt', description: 'Pure, mineral-rich salt for culinary excellence.',image: '/decorative-salt.jpg' },
+                            { name: 'Industrial Salt', path: '/products/himalayan-pink/industrial-salt', description: 'High-quality salt for industrial applications.',image: '/decorative-salt.jpg' },
+                            { name: 'Health and Wellness', path: '/products/himalayan-pink/health-and-wellness-products', description: 'Natural salt products for wellness and spa use.',image: '/decorative-salt.jpg' },
+                            { name: 'Himalayan Pink Salt Lamps', path: '/products/himalayan-pink/himalayan-salt-lamps', description: 'Elegant lamps for ambiance and air purification.' ,image: '/decorative-salt.jpg'},
+                            { name: 'Decorative Products', path: '/products/himalayan-pink/decorative-products', description: 'Unique, handcrafted salt decor items.' ,image: '/decorative-salt.jpg'},
+                            { name: 'Animal Lick Salt', path: '/products/himalayan-pink/animal-lick-salt', description: 'Nutritious salt licks for livestock health.',image: '/decorative-salt.jpg' }
                         ].map((product, idx) => (
                             <Link key={idx} href={product.path}>
                                 <div className="bg-[#2a3b4f] p-6 rounded-xl border border-green card hover-scale">
-                                    <div className="relative w-full h-48 mb-4">
+                                    <div className="relative w-full h-65 mb-4">
                                         <Image
-                                            src="/decorative-salt.jpg"
+                                            src={product.image}
                                             alt={product.name}
                                             layout="fill"
                                             objectFit="cover"
