@@ -32,7 +32,7 @@ const popularProducts = [
 export default function Footer() {
     return (
 
-        <footer className="bg-gradient-to-r from-gray-900 to-gray-800 text-white py-12 px-4 sm:px-6 lg:px-8">
+        <footer className="bg-[#141C2C] text-white py-12 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
                 {/* Logo and Branding */}
                 <div className="flex flex-col items-start">

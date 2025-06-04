@@ -24,10 +24,10 @@ export default function FeaturedProducts() {
     return (
         <section
             ref={ref}
-            className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 text-white py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden"
+            className="bg-[#141C2C] text-white py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden"
         >
             {/* Animated Background with Subtle Gradient Shift (Matching HowItWorks/HeroSection) */}
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,_rgba(126,217,87,0.05)_0%,_rgba(44,62,80,0.1)_70%)] animate-gradient-shift" />
+            <div className="absolute inset-0 bg-[#141C2C]] animate-gradient-shift" />
 
             <div className="max-w-7xl mx-auto relative z-10 text-center">
                 {/* Manufacturer Tag */}
