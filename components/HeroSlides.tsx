@@ -7,7 +7,7 @@ import Image from 'next/image';
 const heroSlides = [
     {
         label: 'Himalayan Pink Salt',
-        image: '/image/salt.png',
+        image: '/homeimg.png',
         description: 'Premium Himalayan Pink Salt for culinary, wellness, and decor needs.',
         href: '/request-a-quote',
         path: '/products/himalayan-pink',
