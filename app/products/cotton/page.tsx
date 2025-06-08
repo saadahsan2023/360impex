@@ -229,14 +229,13 @@ export default function Cotton() {
 
                     {/* Image */}
                     <div className="flex justify-center md:justify-end">
-                        <div className="relative w-full max-w-md h-[320px] sm:h-[400px] max-h-[400px]">
+                        <div className="relative w-full max-w-[400px] aspect-square mx-auto">
                             <Image
-                                src="/image/cotton.jpg"
-                                alt="Cotton"
-                                layout="fill"
-                                objectFit="cover"
-                                className="rounded-2xl shadow-2xl border-4 border-[#7ed95730]"
-                                priority={true}
+                                src="/test1.png"
+                                alt="Himalayan Pink Salt"
+                                fill
+                                className="object-contain rounded-2xl shadow-2xl border-4 border-[#7ed95730] bg-white"
+                                priority
                             />
                         </div>
                     </div>
@@ -252,8 +251,8 @@ export default function Cotton() {
                     </h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                         {[
-                            { name: 'Desi Cotton (Gossypium Arboreum)', path: '/products/cotton/desi-cotton-gossypium-arboreum', description: 'A robust and eco-friendly cotton variety, ideal for sustainable textile production.',image: '/decorative-salt.jpg' },
-                            { name: 'American Cotton (Gossypium Hirsutum)', path: '/products/cotton/american-cotton-gossypium-hirsutum', description: 'Premium quality cotton known for its softness and strength, perfect for high-end fabrics.',image: '/decorative-salt.jpg' }
+                            { name: 'Desi Cotton (Gossypium Arboreum)', path: '/products/cotton/desi-cotton-gossypium-arboreum', description: 'A robust and eco-friendly cotton variety, ideal for sustainable textile production.', image: '/decorative-salt.jpg' },
+                            { name: 'American Cotton (Gossypium Hirsutum)', path: '/products/cotton/american-cotton-gossypium-hirsutum', description: 'Premium quality cotton known for its softness and strength, perfect for high-end fabrics.', image: '/decorative-salt.jpg' }
                         ].map((product, idx) => (
                             <Link key={idx} href={product.path}>
                                 <div className="bg-[#2a3b4f] p-6 rounded-xl border border-green card hover-scale">

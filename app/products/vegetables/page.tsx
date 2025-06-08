@@ -216,14 +216,13 @@ export default function Vegetables() {
 
                     {/* Image */}
                     <div className="flex justify-center md:justify-end">
-                        <div className="relative w-full max-w-md h-[320px] sm:h-[400px] max-h-[400px]">
+                        <div className="relative w-full max-w-[400px] aspect-square mx-auto">
                             <Image
-                                src="/image/vegetables.jpg"
-                                alt="Vegetables"
-                                layout="fill"
-                                objectFit="cover"
-                                className="rounded-2xl shadow-2xl border-4 border-[#7ed95730]"
-                                priority={true}
+                                src="/test4.png"
+                                alt="Himalayan Pink Salt"
+                                fill
+                                className="object-contain rounded-2xl shadow-2xl border-4 border-[#7ed95730] bg-white"
+                                priority
                             />
                         </div>
                     </div>
@@ -239,12 +238,12 @@ export default function Vegetables() {
                     </h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                         {[
-                            { name: 'Onions', path: '/products/vegetables/onions', description: 'Crisp and flavorful onions, ideal for global cuisines.',image: '/decorative-salt.jpg' },
-                            { name: 'Garlic', path: '/products/vegetables/garlic', description: 'Aromatic garlic, perfect for culinary and health uses.',image: '/decorative-salt.jpg' },
-                            { name: 'Ginger', path: '/products/vegetables/ginger', description: 'Fresh and zesty ginger, great for cooking and wellness.',image: '/decorative-salt.jpg' },
-                            { name: 'Dry Chilies', path: '/products/vegetables/dry-chilies', description: 'Spicy dried chilies for bold flavors in dishes.',image: '/decorative-salt.jpg' },
-                            { name: 'Bitter Gourd (Karela)', path: '/products/vegetables/bitter-gourd-karela', description: 'Nutritious bitter gourd, popular in Asian cuisines.',image: '/decorative-salt.jpg' },
-                            { name: 'Potato', path: '/products/vegetables/potato', description: 'Versatile potatoes, perfect for a variety of dishes.',image: '/decorative-salt.jpg' }
+                            { name: 'Onions', path: '/products/vegetables/onions', description: 'Crisp and flavorful onions, ideal for global cuisines.', image: '/decorative-salt.jpg' },
+                            { name: 'Garlic', path: '/products/vegetables/garlic', description: 'Aromatic garlic, perfect for culinary and health uses.', image: '/decorative-salt.jpg' },
+                            { name: 'Ginger', path: '/products/vegetables/ginger', description: 'Fresh and zesty ginger, great for cooking and wellness.', image: '/decorative-salt.jpg' },
+                            { name: 'Dry Chilies', path: '/products/vegetables/dry-chilies', description: 'Spicy dried chilies for bold flavors in dishes.', image: '/decorative-salt.jpg' },
+                            { name: 'Bitter Gourd (Karela)', path: '/products/vegetables/bitter-gourd-karela', description: 'Nutritious bitter gourd, popular in Asian cuisines.', image: '/decorative-salt.jpg' },
+                            { name: 'Potato', path: '/products/vegetables/potato', description: 'Versatile potatoes, perfect for a variety of dishes.', image: '/decorative-salt.jpg' }
                         ].map((product, idx) => (
                             <Link key={idx} href={product.path}>
                                 <div className="bg-[#2a3b4f] p-6 rounded-xl border border-green card hover-scale">

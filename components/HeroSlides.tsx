@@ -7,35 +7,35 @@ import Image from 'next/image';
 const heroSlides = [
     {
         label: 'Himalayan Pink Salt',
-        image: '/homeimg.png',
+        image: '/pinksalt.png',
         description: 'Premium Himalayan Pink Salt for culinary, wellness, and decor needs.',
         href: '/request-a-quote',
         path: '/products/himalayan-pink',
     },
     {
         label: 'Vegetables',
-        image: '/image/vegis.jpg',
+        image: '/vegis.png',
         description: 'Fresh, organic vegetables sourced from top farms worldwide.',
         href: '/request-a-quote',
         path: '/products/vegetables',
     },
     {
         label: 'Fruits',
-        image: '/image/friuts.png',
+        image: '/fruits.png',
         description: 'Juicy fruits packed with natural sweetness and nutrition.',
         href: '/request-a-quote',
         path: '/products/Fruits',
     },
     {
         label: 'Rice',
-        image: '/image/rice.jpg',
+        image: '/rice.png',
         description: 'High-quality rice varieties, including Basmati and Sella.',
         href: '/request-a-quote',
         path: '/products/rice',
     },
     {
         label: 'Cotton',
-        image: '/image/cotton.jpg',
+        image: '/cotton.png',
         description: 'Sustainable cotton for textiles and industrial applications.',
         href: '/request-a-quote',
         path: '/products/cotton',
@@ -121,14 +121,14 @@ export default function HeroSection() {
                                         className="inline-block bg-[#7ed957] text-white font-semibold py-3 px-6 rounded-lg hover:bg-[#6cc44a] transition-all duration-300 shadow-md hover:shadow-xl"
                                         style={{ fontFamily: "'Montserrat', sans-serif" }}
                                     >
-                                        Shop Now
+                                        Place Your Order
                                     </Link>
                                     <Link
                                         href={currentSlide.path}
                                         className="inline-block text-white font-medium py-2 px-4 rounded-md border border-transparent hover:border-[#7ed957] hover:text-[#7ed957] hover:bg-gray-800/50 transition-all duration-300"
                                         style={{ fontFamily: "'Montserrat', sans-serif" }}
                                     >
-                                        Learn More
+                                        Explore Products
                                     </Link>
                                 </div>
                             </motion.div>

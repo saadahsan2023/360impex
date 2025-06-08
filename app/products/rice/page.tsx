@@ -216,16 +216,16 @@ export default function Rice() {
 
                     {/* Image */}
                     <div className="flex justify-center md:justify-end">
-                        <div className="relative w-full max-w-md h-[320px] sm:h-[400px] max-h-[400px]">
+                        <div className="relative w-full max-w-[400px] aspect-square mx-auto">
                             <Image
-                                src="/image/rice.jpg"
-                                alt="Rice"
-                                layout="fill"
-                                objectFit="cover"
-                                className="rounded-2xl shadow-2xl border-4 border-[#7ed95730]"
-                                priority={true}
+                                src="/test2.png"
+                                alt="Himalayan Pink Salt"
+                                fill
+                                className="object-contain rounded-2xl shadow-2xl border-4 border-[#7ed95730] bg-white"
+                                priority
                             />
                         </div>
+
                     </div>
                 </div>
 

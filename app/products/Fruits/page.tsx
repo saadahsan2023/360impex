@@ -217,14 +217,13 @@ export default function Fruits() {
 
                     {/* Image */}
                     <div className="flex justify-center md:justify-end">
-                        <div className="relative w-full max-w-md h-[320px] sm:h-[400px] max-h-[400px]">
+                        <div className="relative w-full max-w-[400px] aspect-square mx-auto">
                             <Image
-                                src="/image/fruits.jpg"
-                                alt="Fruits"
-                                layout="fill"
-                                objectFit="cover"
-                                className="rounded-2xl shadow-2xl border-4 border-[#7ed95730]"
-                                priority={true}
+                                src="/test3.png"
+                                alt="Himalayan Pink Salt"
+                                fill
+                                className="object-contain rounded-2xl shadow-2xl border-4 border-[#7ed95730] bg-white"
+                                priority
                             />
                         </div>
                     </div>
@@ -240,7 +239,7 @@ export default function Fruits() {
                     </h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                         {[
-                            { name: 'Mangoes', path: '/products/Fruits/mangoes', description: 'Juicy and flavorful mangoes, perfect for tropical delights.' , image: '/decorative-salt.jpg' },
+                            { name: 'Mangoes', path: '/products/Fruits/mangoes', description: 'Juicy and flavorful mangoes, perfect for tropical delights.', image: '/decorative-salt.jpg' },
                             { name: 'Apples', path: '/products/Fruits/apples', description: 'Crisp and sweet apples, ideal for snacking and cooking.', image: '/decorative-salt.jpg' },
                             { name: 'Bananas', path: '/products/Fruits/bananas', description: 'Sweet and nutritious bananas, great for all markets.', image: '/decorative-salt.jpg' },
                             { name: 'Pomegranates', path: '/products/Fruits/pomegranates', description: 'Vibrant and antioxidant-rich pomegranates for health-conscious consumers.', image: '/decorative-salt.jpg' },
