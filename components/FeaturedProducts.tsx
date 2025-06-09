@@ -124,25 +124,25 @@ const featuredProducts = [
   {
     label: 'Vegetables',
     href: '/products/vegetables',
-    image: '/test1.png',
+    image: '/PRO1.png',
     description: 'Fresh and organic vegetables, sourced directly from the finest farms.',
   },
   {
     label: 'Fruits',
     href: '/products/Fruits',
-    image: '/test2.png',
+    image: '/pro4.png',
     description: 'Juicy and delicious fruits, packed with natural sweetness and nutrition.',
   },
   {
     label: 'Rice',
     href: '/products/rice',
-    image: '/test3.png',
+    image: '/pro3.png',
     description: 'High-quality rice varieties, including Basmati and Sella, for every meal.',
   },
   {
     label: 'Cotton',
     href: '/products/cotton',
-    image: '/test4.png',
+    image: '/pro2.png',
     description: 'Pure and sustainable cotton, ideal for textiles and industrial use.',
   },
 ];
@@ -251,15 +251,16 @@ export default function FeaturedProducts() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: idx * 0.1, ease: "easeOut" }}
             >
-              <figure className="w-32 h-32 sm:w-40 sm:h-40">
+              <figure className="w-40 h-40 sm:w-60 sm:h-60 md:w-72 md:h-72">
                 <Image
                   src={product.image}
                   alt={product.label}
-                  width={160}
-                  height={160}
+                  width={300}
+                  height={300}
                   className="w-full h-full object-cover rounded-lg shadow-sm"
                 />
               </figure>
+
               <div className="text-center">
                 <h3
                   className="text-xl font-semibold text-[#1F2937] mb-2"
