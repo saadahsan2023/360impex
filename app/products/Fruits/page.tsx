@@ -239,11 +239,11 @@ export default function Fruits() {
                     </h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                         {[
-                            { name: 'Mangoes', path: '/products/Fruits/mangoes', description: 'Juicy and flavorful mangoes, perfect for tropical delights.', image: '/decorative-salt.jpg' },
-                            { name: 'Apples', path: '/products/Fruits/apples', description: 'Crisp and sweet apples, ideal for snacking and cooking.', image: '/decorative-salt.jpg' },
-                            { name: 'Bananas', path: '/products/Fruits/bananas', description: 'Sweet and nutritious bananas, great for all markets.', image: '/decorative-salt.jpg' },
-                            { name: 'Pomegranates', path: '/products/Fruits/pomegranates', description: 'Vibrant and antioxidant-rich pomegranates for health-conscious consumers.', image: '/decorative-salt.jpg' },
-                            { name: 'Dates', path: '/products/Fruits/dates', description: 'Sweet and chewy dates, perfect for natural sweetness.', image: '/decorative-salt.jpg' }
+                            { name: 'Mangoes', path: '/products/Fruits/mangoes', description: 'Juicy and flavorful mangoes, perfect for tropical delights.', image: '/fruits/f5.jpg' },
+                            { name: 'Apples', path: '/products/Fruits/apples', description: 'Crisp and sweet apples, ideal for snacking and cooking.', image: '/fruits/f4.avif' },
+                            { name: 'Bananas', path: '/products/Fruits/bananas', description: 'Sweet and nutritious bananas, great for all markets.', image: '/fruits/f1.avif' },
+                            { name: 'Pomegranates', path: '/products/Fruits/pomegranates', description: 'Vibrant and antioxidant-rich pomegranates for health-conscious consumers.', image: '/fruits/f2.jpg' },
+                            { name: 'Dates', path: '/products/Fruits/dates', description: 'Sweet and chewy dates, perfect for natural sweetness.', image: '/fruits/f3.avif' }
                         ].map((product, idx) => (
                             <Link key={idx} href={product.path}>
                                 <div className="bg-[#2a3b4f] p-6 rounded-xl border border-green card hover-scale">

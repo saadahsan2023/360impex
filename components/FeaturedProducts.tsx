@@ -124,7 +124,7 @@ const featuredProducts = [
   {
     label: 'Vegetables',
     href: '/products/vegetables',
-    image: '/PRO1.png',
+    image: '/pro1.png',
     description: 'Fresh and organic vegetables, sourced directly from the finest farms.',
   },
   {

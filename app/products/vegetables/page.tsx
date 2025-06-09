@@ -238,12 +238,12 @@ export default function Vegetables() {
                     </h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                         {[
-                            { name: 'Onions', path: '/products/vegetables/onions', description: 'Crisp and flavorful onions, ideal for global cuisines.', image: '/decorative-salt.jpg' },
-                            { name: 'Garlic', path: '/products/vegetables/garlic', description: 'Aromatic garlic, perfect for culinary and health uses.', image: '/decorative-salt.jpg' },
-                            { name: 'Ginger', path: '/products/vegetables/ginger', description: 'Fresh and zesty ginger, great for cooking and wellness.', image: '/decorative-salt.jpg' },
-                            { name: 'Dry Chilies', path: '/products/vegetables/dry-chilies', description: 'Spicy dried chilies for bold flavors in dishes.', image: '/decorative-salt.jpg' },
-                            { name: 'Bitter Gourd (Karela)', path: '/products/vegetables/bitter-gourd-karela', description: 'Nutritious bitter gourd, popular in Asian cuisines.', image: '/decorative-salt.jpg' },
-                            { name: 'Potato', path: '/products/vegetables/potato', description: 'Versatile potatoes, perfect for a variety of dishes.', image: '/decorative-salt.jpg' }
+                            { name: 'Onions', path: '/products/vegetables/onions', description: 'Crisp and flavorful onions, ideal for global cuisines.', image: '/vegetables/vegis4.jpg' },
+                            { name: 'Garlic', path: '/products/vegetables/garlic', description: 'Aromatic garlic, perfect for culinary and health uses.', image: '/vegetables/vegis5.jpg' },
+                            { name: 'Ginger', path: '/products/vegetables/ginger', description: 'Fresh and zesty ginger, great for cooking and wellness.', image: '/vegetables/vegis3.jpg' },
+                            { name: 'Dry Chilies', path: '/products/vegetables/dry-chilies', description: 'Spicy dried chilies for bold flavors in dishes.', image: '/vegetables/vegis2.jpg' },
+                            { name: 'Bitter Gourd (Karela)', path: '/products/vegetables/bitter-gourd-karela', description: 'Nutritious bitter gourd, popular in Asian cuisines.', image: '/vegetables/vegis6.jpg' },
+                            { name: 'Potato', path: '/products/vegetables/potato', description: 'Versatile potatoes, perfect for a variety of dishes.', image: '/vegetables/vegis1.jpg' }
                         ].map((product, idx) => (
                             <Link key={idx} href={product.path}>
                                 <div className="bg-[#2a3b4f] p-6 rounded-xl border border-green card hover-scale">
