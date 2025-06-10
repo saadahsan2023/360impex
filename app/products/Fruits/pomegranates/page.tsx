@@ -237,12 +237,12 @@ export default function Pomegranates() {
                                 >
                                     {item.description}
                                 </p>
-                                <button
+                                {/* <button
                                     className="bg-[#7ed957] text-black font-semibold px-4 py-2 rounded-lg hover:bg-[#6ec84a] transition duration-300"
                                     style={{ fontFamily: "'Montserrat', sans-serif" }}
                                 >
                                     Learn More
-                                </button>
+                                </button> */}
                             </div>
                         ))}
                     </div>

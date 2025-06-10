@@ -27,7 +27,7 @@ const menuStructure = [
                 basePath: '/products/vegetables',
                 subItems: [
                     'Onions',
-                    'Patato',
+                    'patato',
                     'Garlic',
                     'Ginger',
                     'Dry Chilies',
