@@ -185,11 +185,11 @@ const AdminPanel: React.FC = () => {
 
   if (!access) {
     return (
-      <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-gray-900 to-blue-900">
+      <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-gray-900 to-[#1b2636]">
         <div className="p-8 bg-white rounded-2xl shadow-2xl w-full max-w-md transform transition-all hover:scale-105">
           <div className="flex justify-center mb-6">
             <Image
-              src="/logo/logo.png" // Replace with your logo path
+              src="/logo/logodark.png" // Replace with your logo path
               alt="360Impex Logo"
               width={120}
               height={120}
@@ -207,7 +207,7 @@ const AdminPanel: React.FC = () => {
                 id="email"
                 type="email"
                 placeholder="Enter admin email"
-                className="mt-1 p-3 w-full border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                className="mt-1 p-3 w-full border rounded-lg focus:ring-2 focus:ring-[#7ed957] focus:outline-none"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
@@ -221,7 +221,7 @@ const AdminPanel: React.FC = () => {
                 id="password"
                 type="password"
                 placeholder="Enter admin password"
-                className="mt-1 p-3 w-full border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                className="mt-1 p-3 w-full border rounded-lg focus:ring-2 focus:ring-[#7ed957] focus:outline-none"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
@@ -229,7 +229,7 @@ const AdminPanel: React.FC = () => {
             </div>
             <button
               type="submit"
-              className="w-full bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 transition-colors font-semibold"
+              className="w-full bg-[#7ed957] text-white p-3 rounded-lg hover:bg-[#6CC44A] transition-colors font-semibold"
             >
               Login
             </button>
@@ -257,8 +257,8 @@ const AdminPanel: React.FC = () => {
           <button
             onClick={() => setActiveTab("quotes")}
             className={`w-full text-left p-3 rounded-lg flex items-center transition-all duration-200 ${activeTab === "quotes"
-                ? "bg-blue-600 text-white"
-                : "bg-gray-700 text-gray-200 hover:bg-blue-500 hover:text-white"
+              ? "bg-blue-600 text-white"
+              : "bg-gray-700 text-gray-200 hover:bg-blue-500 hover:text-white"
               }`}
           >
             <span className="mr-2">📦</span> Quote Requests
@@ -266,8 +266,8 @@ const AdminPanel: React.FC = () => {
           <button
             onClick={() => setActiveTab("messages")}
             className={`w-full text-left p-3 rounded-lg flex items-center transition-all duration-200 ${activeTab === "messages"
-                ? "bg-blue-600 text-white"
-                : "bg-gray-700 text-gray-200 hover:bg-blue-500 hover:text-white"
+              ? "bg-blue-600 text-white"
+              : "bg-gray-700 text-gray-200 hover:bg-blue-500 hover:text-white"
               }`}
           >
             <span className="mr-2">✉️</span> Contact Messages
