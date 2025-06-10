@@ -199,7 +199,7 @@ export default function Pomegranates() {
                     <div className="flex justify-center md:justify-end">
                         <div className="relative w-full max-w-md h-[320px] sm:h-[400px] max-h-[400px]">
                             <Image
-                                src="/image/pomegranates.jpg"
+                                src="/fruits/f2.jpg"
                                 alt="Pomegranates"
                                 layout="fill"
                                 objectFit="cover"

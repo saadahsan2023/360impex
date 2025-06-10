@@ -203,7 +203,7 @@ export default function DesiCotton() {
                     <div className="flex justify-center md:justify-end">
                         <div className="relative w-full max-w-md h-[320px] sm:h-[400px] max-h-[400px]">
                             <Image
-                                src="/image/desi-cotton-gossypium-arboreum.jpg"
+                                src="/cotton/Desi-Cotton-Gossypium-Arboreum.jpg"
                                 alt="Desi Cotton (Gossypium Arboreum)"
                                 layout="fill"
                                 objectFit="cover"

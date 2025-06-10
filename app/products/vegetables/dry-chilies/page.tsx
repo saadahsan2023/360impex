@@ -76,7 +76,7 @@ export default function DryChilies() {
                     <div className="flex justify-center md:justify-end">
                         <div className="relative w-full max-w-md h-[320px] sm:h-[400px] max-h-[400px]">
                             <Image
-                                src="/image/dry-chilies.jpg"
+                                src="/vegetables/vegis2.jpg"
                                 alt="Dry Chilies"
                                 layout="fill"
                                 objectFit="cover"

@@ -252,7 +252,7 @@ export default function Cotton() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                         {[
                             { name: 'Desi Cotton (Gossypium Arboreum)', path: '/products/cotton/desi-cotton-gossypium-arboreum', description: 'A robust and eco-friendly cotton variety, ideal for sustainable textile production.', image: '/cotton/Desi-Cotton-Gossypium-Arboreum.jpg' },
-                            { name: 'American Cotton (Gossypium Hirsutum)', path: '/products/cotton/american-cotton-gossypium-hirsutum', description: 'Premium quality cotton known for its softness and strength, perfect for high-end fabrics.', image: '/cotton/American-Cotton-Gossypium-Hirsutum.avif'}
+                            { name: 'American Cotton (Gossypium Hirsutum)', path: '/products/cotton/american-cotton-gossypium-hirsutum', description: 'Premium quality cotton known for its softness and strength, perfect for high-end fabrics.', image: '/cotton/American-Cotton-Gossypium-Hirsutum.avif' }
                         ].map((product, idx) => (
                             <Link key={idx} href={product.path}>
                                 <div className="bg-[#2a3b4f] p-6 rounded-xl border border-green card hover-scale">

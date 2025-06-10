@@ -201,7 +201,7 @@ export default function Apples() {
                     <div className="flex justify-center md:justify-end">
                         <div className="relative w-full max-w-md h-[320px] sm:h-[400px] max-h-[400px]">
                             <Image
-                                src="/image/apples.jpg"
+                                src="/fruits/f4.avif"
                                 alt="Apples"
                                 layout="fill"
                                 objectFit="cover"

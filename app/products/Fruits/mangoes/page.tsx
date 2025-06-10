@@ -200,7 +200,7 @@ export default function Mangoes() {
                     <div className="flex justify-center md:justify-end">
                         <div className="relative w-full max-w-md h-[320px] sm:h-[400px] max-h-[400px]">
                             <Image
-                                src="/image/mangoes.jpg"
+                                src="/fruits/f5.jpg"
                                 alt="Mangoes"
                                 layout="fill"
                                 objectFit="cover"

@@ -76,7 +76,7 @@ export default function BitterGourdKarela() {
                     <div className="flex justify-center md:justify-end">
                         <div className="relative w-full max-w-md h-[320px] sm:h-[400px] max-h-[400px]">
                             <Image
-                                src="/image/bitter-gourd-karela.jpg"
+                                src="/vegetables/vegis6.jpg"
                                 alt="Bitter Gourd (Karela)"
                                 layout="fill"
                                 objectFit="cover"

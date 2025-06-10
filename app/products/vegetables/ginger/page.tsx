@@ -76,7 +76,7 @@ export default function Ginger() {
                     <div className="flex justify-center md:justify-end">
                         <div className="relative w-full max-w-md h-[320px] sm:h-[400px] max-h-[400px]">
                             <Image
-                                src="/image/ginger.jpg"
+                                src="/vegetables/vegis3.jpg"
                                 alt="Ginger"
                                 layout="fill"
                                 objectFit="cover"

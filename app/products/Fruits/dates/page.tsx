@@ -198,7 +198,7 @@ export default function Dates() {
                     <div className="flex justify-center md:justify-end">
                         <div className="relative w-full max-w-md h-[320px] sm:h-[400px] max-h-[400px]">
                             <Image
-                                src="/image/dates.jpg"
+                                src="/fruits/f3.avif"
                                 alt="Dates"
                                 layout="fill"
                                 objectFit="cover"

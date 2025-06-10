@@ -76,7 +76,7 @@ export default function Onions() {
                     <div className="flex justify-center md:justify-end">
                         <div className="relative w-full max-w-md h-[320px] sm:h-[400px] max-h-[400px]">
                             <Image
-                                src="/image/onions.jpg"
+                                src="/vegetables/vegis4.jpg"
                                 alt="Onions"
                                 layout="fill"
                                 objectFit="cover"

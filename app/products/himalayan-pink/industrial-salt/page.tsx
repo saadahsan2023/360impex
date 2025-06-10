@@ -75,7 +75,7 @@ export default function IndustrialSalt() {
                     <div className="flex justify-center md:justify-end">
                         <div className="relative w-full max-w-md h-[320px] sm:h-[400px] max-h-[400px]">
                             <Image
-                                src="/industrial-salt.jpg"
+                                src="/himalayan/img4.jpg"
                                 alt="Industrial Salt"
                                 layout="fill"
                                 objectFit="cover"

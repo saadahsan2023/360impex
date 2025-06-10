@@ -76,7 +76,7 @@ export default function BasmatiRice() {
                     <div className="flex justify-center md:justify-end">
                         <div className="relative w-full max-w-md h-[320px] sm:h-[400px] max-h-[400px]">
                             <Image
-                                src="/image/basmati-rice.jpg"
+                                src="/rice/basmati-rice.jpeg"
                                 alt="Basmati Rice"
                                 layout="fill"
                                 objectFit="cover"

@@ -189,7 +189,7 @@ export default function RockSaltLamps() {
                     <div className="flex justify-center md:justify-end">
                         <div className="relative w-full max-w-md h-[320px] sm:h-[400px] max-h-[400px]">
                             <Image
-                                src="/lamp.jpg"
+                                src="/himalayan/Rock-Salt-Lamps.jpg"
                                 alt="Rock Salt Lamps"
                                 layout="fill"
                                 objectFit="cover"

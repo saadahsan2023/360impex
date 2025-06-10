@@ -200,7 +200,7 @@ export default function AmericanCotton() {
                     <div className="flex justify-center md:justify-end">
                         <div className="relative w-full max-w-md h-[320px] sm:h-[400px] max-h-[400px]">
                             <Image
-                                src="/image/american-cotton-gossypium-hirsutum.jpg"
+                                src="/cotton/American-Cotton-Gossypium-Hirsutum.avif"
                                 alt="American Cotton (Gossypium Hirsutum)"
                                 layout="fill"
                                 objectFit="cover"
