@@ -242,11 +242,13 @@ export default function HimalayanPink() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                         {[
                             { name: 'Edible Salt', path: '/products/himalayan-pink/edible-salt', description: 'Pure, mineral-rich salt for culinary excellence.', image: '/himalayan/img2.jpg' },
+                            { name: 'Animal Lick Salt', path: '/products/himalayan-pink/animal-lick-salt', description: 'Nutritious salt licks for livestock health.', image: '/himalayan/Animal-Lick-Salt.jpg' },
+                            { name: 'Himalayan Pink Salt Lamps', path: '/products/himalayan-pink/himalayan-salt-lamps', description: 'Elegant lamps for ambiance and air purification.', image: '/himalayan/Rock-Salt-Lamps.jpg' },
                             { name: 'Industrial Salt', path: '/products/himalayan-pink/industrial-salt', description: 'High-quality salt for industrial applications.', image: '/himalayan/img4.jpg' },
                             { name: 'Health and Wellness', path: '/products/himalayan-pink/health-and-wellness-products', description: 'Natural salt products for wellness and spa use.', image: '/himalayan/img6.jpg' },
-                            { name: 'Himalayan Pink Salt Lamps', path: '/products/himalayan-pink/himalayan-salt-lamps', description: 'Elegant lamps for ambiance and air purification.', image: '/himalayan/img3.jpg' },
-                            { name: 'Decorative Products', path: '/products/himalayan-pink/decorative-products', description: 'Unique, handcrafted salt decor items.', image: '/himalayan/img1.webp' },
-                            { name: 'Animal Lick Salt', path: '/products/himalayan-pink/animal-lick-salt', description: 'Nutritious salt licks for livestock health.', image: '/himalayan/img5.jpg' }
+
+                            { name: 'Decorative Products', path: '/products/himalayan-pink/decorative-products', description: 'Unique, handcrafted salt decor items.', image: '/himalayan/img3.jpg' },
+
                         ].map((product, idx) => (
                             <Link key={idx} href={product.path}>
                                 <div className="bg-[#2a3b4f] p-6 rounded-xl border border-green card hover-scale">

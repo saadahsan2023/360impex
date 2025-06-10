@@ -1,8 +1,7 @@
-// Import necessary functions from Firebase SDK
-import { initializeApp, getApp, getApps } from "firebase/app";
-import { getDatabase } from "firebase/database";
+// lib/firebase.ts
+import { initializeApp, getApp, getApps } from 'firebase/app';
+import { getDatabase } from 'firebase/database';
 
-// Your Firebase configuration
 const firebaseConfig = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY || "AIzaSyAec6BkZaZ0hIw2IqQxTYq8BnmAbnvQ2w8",
   authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN || "impex-b3665.firebaseapp.com",
@@ -13,23 +12,7 @@ const firebaseConfig = {
   measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID || "G-PETFFCZCJ3",
 };
 
-// Initialize Firebase App
-let app;
-try {
-  if (!getApps().length) {
-    app = initializeApp(firebaseConfig);
-    console.log('Firebase app initialized successfully');
-  } else {
-    app = getApp();
-    console.log('Firebase app already initialized');
-  }
-} catch (error) {
-  console.error('Firebase initialization error:', error);
-}
-
-// Initialize Realtime Database
+const app = getApps().length ? getApp() : initializeApp(firebaseConfig);
 const database = getDatabase(app);
-console.log('Realtime Database instance created:', database);
 
-// Export the database instance
 export { database };
