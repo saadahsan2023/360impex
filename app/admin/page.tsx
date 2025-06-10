@@ -57,7 +57,7 @@ const AdminPanel: React.FC = () => {
   // Login handler
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
-    if (email === "admin@360impex.com" && password === "admin123@") {
+    if (email === "admin@360impex.com" && password === "uzairosama123@") {
       setAccess(true);
       setError("");
     } else {
@@ -193,10 +193,10 @@ const AdminPanel: React.FC = () => {
               alt="360Impex Logo"
               width={120}
               height={120}
-              className="rounded-full"
+              className="rounded-full cursor-pointer"
             />
           </div>
-          <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">Admin Login</h2>
+          <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">Admin Login Only</h2>
           {error && <p className="text-red-500 text-center mb-4">{error}</p>}
           <form onSubmit={handleLogin}>
             <div className="mb-4">
@@ -229,7 +229,7 @@ const AdminPanel: React.FC = () => {
             </div>
             <button
               type="submit"
-              className="w-full bg-[#7ed957] text-white p-3 rounded-lg hover:bg-[#6CC44A] transition-colors font-semibold"
+              className="w-full cursor-pointer bg-[#7ed957]   hover:bg-[#6CC44A]  text-white p-3 rounded-lg transition-colors font-semibold"
             >
               Login
             </button>
@@ -256,25 +256,25 @@ const AdminPanel: React.FC = () => {
         <nav className="space-y-2">
           <button
             onClick={() => setActiveTab("quotes")}
-            className={`w-full text-left p-3 rounded-lg flex items-center transition-all duration-200 ${activeTab === "quotes"
-              ? "bg-blue-600 text-white"
-              : "bg-gray-700 text-gray-200 hover:bg-blue-500 hover:text-white"
+            className={`w-full text-left  cursor-pointer p-3 rounded-lg flex items-center transition-all duration-200 ${activeTab === "quotes"
+              ? "bg-[#7ed957]   hover:bg-[#6CC44A] text-white"
+              : "bg-gray-700 text-gray-200 hover:bg-[#7ed957]  hover:text-white"
               }`}
           >
             <span className="mr-2">📦</span> Quote Requests
           </button>
           <button
             onClick={() => setActiveTab("messages")}
-            className={`w-full text-left p-3 rounded-lg flex items-center transition-all duration-200 ${activeTab === "messages"
-              ? "bg-blue-600 text-white"
-              : "bg-gray-700 text-gray-200 hover:bg-blue-500 hover:text-white"
+            className={`w-full  cursor-pointer text-left p-3 rounded-lg flex items-center transition-all duration-200 ${activeTab === "messages"
+              ? "bg-[#7ed957]   hover:bg-[#6CC44A] text-white"
+              : "bg-gray-700 text-gray-200 hover:bg-[#6CC44A] hover:text-white"
               }`}
           >
             <span className="mr-2">✉️</span> Contact Messages
           </button>
           <button
             onClick={handleLogout}
-            className="w-full text-left p-3 rounded-lg flex items-center transition-all duration-200 bg-red-600 text-white hover:bg-red-700"
+            className="w-full text-left p-3 cursor-pointer rounded-lg flex items-center transition-all duration-200 bg-red-600 text-white hover:bg-red-700"
           >
             <span className="mr-2">🚪</span> Logout
           </button>
