@@ -165,9 +165,8 @@ export default function AboutUs() {
                     <div className="flex justify-center gap-6 flex-wrap">
                         {[
                             { name: 'FBR', logo: '/fbr.png' },
-                            { name: 'PSW', logo: '/psw.png' },
-                            { name: 'SMEDA', logo: '/smeda.png' },
-                            { name: 'Customs', logo: '/customs.png' },
+                            { name: 'SECP', logo: '/secp.png' },
+
                         ].map((org, index) => (
                             <div key={index} className="flex-none w-24 sm:w-32 text-center">
                                 <span className="text-gray-400 block mb-2">{org.name}</span>

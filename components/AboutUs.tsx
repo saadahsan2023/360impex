@@ -131,9 +131,9 @@ export default function AboutUs() {
                     <h2 className="text-3xl font-bold mb-6" style={{ fontFamily: "'Montserrat', sans-serif" }}>Registered With</h2>
                     <div className="flex justify-center gap-6 flex-wrap">
                         <span className="text-gray-400">FBR</span>
-                        <span className="text-gray-400">PSW</span>
-                        <span className="text-gray-400">SMEDA</span>
-                        <span className="text-gray-400">Customs</span>
+                        <span className="text-gray-400">SECP</span>
+                        {/* <span className="text-gray-400">SMEDA</span>
+                        <span className="text-gray-400">Customs</span> */}
                     </div>
                 </div>
             </div>
