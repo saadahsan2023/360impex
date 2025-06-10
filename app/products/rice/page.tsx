@@ -239,9 +239,9 @@ export default function Rice() {
                     </h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                         {[
-                            { name: 'Basmati Rice', path: '/products/rice/basmati-rice', description: 'Aromatic and long-grain rice, perfect for premium dishes.', image: '/rice/basmati.avif' },
-                            { name: 'Non-Basmati Rice', path: '/products/rice/non-basmati-rice', description: 'Versatile rice varieties for everyday culinary needs.', image: '/rice/nonbasmati.jpg' },
-                            { name: 'Sella Rice', path: '/products/rice/sella-rice', description: 'Parboiled rice with enhanced texture and flavor.', image: '/rice/sella.jpg' }
+                            { name: 'Basmati Rice', path: '/products/rice/basmati-rice', description: 'Aromatic and long-grain rice, perfect for premium dishes.', image: '/rice/basmati-rice.jpeg' },
+                            { name: 'Non-Basmati Rice', path: '/products/rice/non-basmati-rice', description: 'Versatile rice varieties for everyday culinary needs.', image: '/rice/Non-Basmati-rice.jpg' },
+                            { name: 'Sella Rice', path: '/products/rice/sella-rice', description: 'Parboiled rice with enhanced texture and flavor.', image: '/rice/sella-rice.webp' }
                         ].map((product, idx) => (
                             <Link key={idx} href={product.path}>
                                 <div className="bg-[#2a3b4f] p-6 rounded-xl border border-green card hover-scale">

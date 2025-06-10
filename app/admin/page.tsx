@@ -196,7 +196,7 @@ const AdminPanel: React.FC = () => {
               className="rounded-full cursor-pointer"
             />
           </div>
-          <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">Admin Login Only</h2>
+          <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">Access Restricted to Admins Only</h2>
           {error && <p className="text-red-500 text-center mb-4">{error}</p>}
           <form onSubmit={handleLogin}>
             <div className="mb-4">
