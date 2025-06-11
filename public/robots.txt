@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://360impex.com
+
+# Sitemaps
+Sitemap: https://360impex.com/sitemap.xml
