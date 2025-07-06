@@ -129,8 +129,8 @@ export default function Footer() {
             </div>
 
             {/* Copyright and Developer Credit */}
-            <div className="max-w-7xl mx-auto mt-8 pt-6 border-t border-gray-700 text-center text-sm text-gray-400">
-                © {new Date().getFullYear()} 360 Impex. All rights reserved. | Developed by <a href="https://www.digitalpoe.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#7ed957] transition"> <link rel="stylesheet" href="/" />Digi Poe Software Agency </a>
+            <div className="max-w-7xl mx-auto mt-8 pt-6 border-t border-gray-700 text-center text-sm text-gray-400 ">
+                © {new Date().getFullYear()} 360impex.com All rights reserved. | Developed by <a href="https://www.digitalpoe.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#7ed957] transition"> <link rel="stylesheet" href="/" />Digi Poe Software Agency </a>
             </div>
         </footer>
 
