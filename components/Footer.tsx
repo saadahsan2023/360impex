@@ -115,10 +115,10 @@ export default function Footer() {
                         })}
                     </div>
                     <p className="text-sm text-gray-400">
-                        Phone: <a href="tel:+491529061160" className="hover:text-[#7ed957] transition">+49 152 9061160</a>
+                        Phone: <a href="tel:+4915259061160" className="hover:text-[#7ed957] transition">+49 152 59061160</a>
                     </p>
                     <p className="text-sm text-gray-400">
-                        WhatsApp: <a href="tel:+491529061160" className="hover:text-[#7ed957] transition">+49 152 9061160</a>
+                        WhatsApp: <a href="https://wa.me/4915259061160" className="hover:text-[#7ed957] transition">+49 152 59061160</a>
                     </p>
                     <p className="text-sm text-gray-400 mb-1">
                         Email: <a href="mailto:info@360impex.com" className="hover:text-[#7ed957] transition">admin@360impex.com</a>
@@ -130,7 +130,7 @@ export default function Footer() {
 
             {/* Copyright and Developer Credit */}
             <div className="max-w-7xl mx-auto mt-8 pt-6 border-t border-gray-700 text-center text-sm text-gray-400">
-                © {new Date().getFullYear()} 360 Impex. All rights reserved. | Developed by <a href="https://www.digitalpoe.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#7ed957] transition"> <link rel="stylesheet" href="/" /> Digi Poe </a>
+                © {new Date().getFullYear()} 360 Impex. All rights reserved. | Developed by <a href="https://www.digitalpoe.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#7ed957] transition"> <link rel="stylesheet" href="/" />Digi Poe Software Agency </a>
             </div>
         </footer>
 
