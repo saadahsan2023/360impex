@@ -118,7 +118,7 @@ export default function Footer() {
                         Phone: <a href="tel:+4915259061160" className="hover:text-[#7ed957] transition">+49 152 59061160</a>
                     </p>
                     <p className="text-sm text-gray-400">
-                        WhatsApp: <a href="https://wa.me/4915259061160" className="hover:text-[#7ed957] transition">+49 152 59061160</a>
+                        WhatsApp: <a href="https://wa.me/4915259061160" target="_blank" className="hover:text-[#7ed957] transition">+49 152 59061160</a>
                     </p>
                     <p className="text-sm text-gray-400 mb-1">
                         Email: <a href="mailto:info@360impex.com" className="hover:text-[#7ed957] transition">admin@360impex.com</a>
