@@ -79,7 +79,7 @@ export default function TopBar() {
           <FaEnvelope size={18} />
         </a>
         <a
-          href="https://wa.me/491529061160"
+          href="https://wa.me/4915259061160"
           target="_blank"
           rel="noopener noreferrer"
           className="text-[#7ed957] hover:text-[#6ec84a] transition-all duration-300 transform hover:scale-125 hover:rotate-12 animate-pulse-once"
